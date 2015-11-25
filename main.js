@@ -12,9 +12,9 @@ var tab = {
 }
 
 function newNote() {
-    var string = strings[Math.floor(Math.random() * 7)];
+    var string = strings[Math.floor(Math.random() * 6)];
     var fret = Math.floor(Math.random() * 10);
-    //console.log("String " + string + ", fret " + fret);
+    console.log("String " + string + ", fret " + fret);
     strings.forEach(function(entry) {
         //console.log(entry);
         if(entry == string) tab[entry] += fret + "-";

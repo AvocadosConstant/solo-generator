@@ -4,13 +4,22 @@
     <title>Solo Generator</title>
     <link href='https://fonts.googleapis.com/css?family=Inconsolata' rel='stylesheet' type='text/css'>
     <link href='./main.css' rel='stylesheet'>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.1/css/materialize.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 <body>
-    <button id="genNote">Generate note</button>
-    <button id="fillBtn">Populate tab</button>
-    <button id="clearTabBtn">Clear tab</button>
-    <div id="tabs"></div>
+    <br>
+    <div class="row container" style="text-align: center;">
+        <h1>Guitar Solo Tab Generator</h1>
+        <div class="row" style="display: flex; justify-content: space-around;">
+            <a class="waves-effect waves-light btn" id="genNote">Generate note</a>
+            <a class="waves-effect waves-light btn" id="fillBtn">Populate tab</a>
+            <a class="waves-effect waves-light btn" id="clearTabBtn">Clear tab</a>
+        </div>
+        <div id="tabs"></div>
+    </div>
     <script src="http://code.jquery.com/jquery-1.11.1.js"></script>
     <script src="./main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.1/js/materialize.min.js"></script>
 </body>
 </html>

@@ -1,7 +1,7 @@
 //var tonic = "C";
 //var mode = "ionian";
 
-var MAX_STRING_LENGTH = 153;
+var MAX_STRING_LENGTH = 100;
 var STRINGS = ["e", "B", "G", "D", "A", "E"];
 var TAB_TEMPLATE = {
     e: "e|",

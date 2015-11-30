@@ -49,6 +49,11 @@ function insertNote(note) {
     }
 }
 
+// TODO
+// Returns a range of possible notes around a given note in a given scale
+function getNotes(note, scale) {
+}
+
 function printTab() {
     $("#tabs").empty();
     STRINGS.forEach(function(entry) {

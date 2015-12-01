@@ -9,23 +9,16 @@
 </head>
 <body>
     <br>
-    <div class="row container" style="text-align: center;">
-        <h1>Guitar Solo Tab Generator</h1>
-        <br>
-        <div class="row" style="display: flex; justify-content: space-around;">
-            <a class="waves-effect waves-light btn" id="genNote"><i class="material-icons right">music_note</i>Generate note</a>
-            <a class="waves-effect waves-light btn" id="fillBtn"><i class="material-icons right">zoom_out_map</i>Populate tab</a>
+    <div class="row container">
+        <h1 class="center-align">Guitar Solo Tab Generator</h1>  
+        <div class="row" id="buttons">
+            <a class="waves-effect waves-light btn" id="genNoteBtn"><i class="material-icons right">music_note</i>Generate note</a>
+            <a class="waves-effect waves-light btn" id="populateBtn"><i class="material-icons right">zoom_out_map</i>Populate tab</a>
             <a class="waves-effect waves-light btn" id="clearTabBtn"><i class="material-icons right">cancel</i>Clear tab</a>
         </div>
-        <br>
-        <div id="tabs"></div>
-        <br>
+        <div class="center-align" id="tabs"></div>
     </div>
-    <footer style="text-align: center;
-                    position:absolute;
-                    bottom:0;
-                    width:100%;
-                    height:300px;">
+    <footer class="center-align">
         <h3>Check out the code on <a href="https://github.com/AvocadosConstant/solo-generator">GitHub</a></h3>
         <h4>Tim Hung and Nik Vanderhoof &copy; 2015</h4>
     </footer>

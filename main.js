@@ -24,11 +24,11 @@ function newNote() {
     var string = STRINGS[Math.floor(Math.random() * 6)];
     
     // choose a fret with max distance of 4 from the previous fret
-    //var fret = (lastFret - 3 < 0) ? Math.floor(Math.random() * 4) : 
-    //    lastFret-3 + Math.floor(Math.random() * 6);
+    var fret = (lastFret - 3 < 0) ? Math.floor(Math.random() * 4) : 
+        lastFret-3 + Math.floor(Math.random() * 6);
     
     // choose a fret around an anchor fret
-    var fret = ANCHOR + Math.floor(Math.random() * 4);
+    //var fret = ANCHOR + Math.floor(Math.random() * 4);
 
     lastFret = fret;
     console.log("String " + string + ", fret " + fret);
@@ -79,13 +79,13 @@ $(document).ready(function() {
     printTab();
 });
 
-$("#genNote").click(function() {
+$("#genNoteBtn").click(function() {
     if(tab["e"].length >= MAX_STRING_LENGTH) return;
     insertNote(newNote());
     printTab();
 });
 
-$("#fillBtn").click(function() {
+$("#populateBtn").click(function() {
     console.log("Fill");
     while(tab["e"].length < MAX_STRING_LENGTH) {
         insertNote(newNote());
